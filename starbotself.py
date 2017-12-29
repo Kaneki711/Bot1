@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import KRIS
-from KRIS.lib.curve.ttypes import *
+import LINETCE.LINE
+from LINE.lib.curve.ttypes import *
 from datetime import datetime
 import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia, tempfile
 from bs4 import BeautifulSoup
@@ -18,7 +18,7 @@ kr = KRIS.LINE()
 kr.login(token='')#r
 kr.loginResult()
 
-print "╔════════════════════════════════════════════════════\n╠❂➣[KRIS BERHASIL LOGIN]\n╚════════════════════════════════════════════════════"
+print "LOGIN SUKSES"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
