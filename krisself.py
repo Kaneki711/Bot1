@@ -168,7 +168,7 @@ KAC=[kr]
 mid = kr.getProfile().mid
 
 Bots=[mid]
-admin=["u31ef22df7f538df1d74dc7f756ef1a32","u9cc2323f5b84f9df880c33aa9f9e3ae1",mid]
+admin=["YOUR MID",mid]
 
 wait = {
     "likeOn":False,
@@ -502,7 +502,7 @@ def bot(op):
                  if wait["kickMention"] == True:
                      contact = kr.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag Me!! Im Busy, ",cName + " Ngapain Ngetag?, ",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja, ", "-_-, ","Kris lagi off, ", cName + " Kenapa Tag saya?, ","SPAM PC aja, " + cName, "Jangan Suka Tag gua, " + cName, "Kamu siapa, " + cName + "?", "Ada Perlu apa, " + cName + "?","Tag doang tidak perlu., "]
+                     balas = ["Dont Tag Me!! Im Busy, ",cName + " Ngapain Ngetag?, ",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja, ", "-_-, ","lagi off, ", cName + " Kenapa Tag saya?, ","SPAM PC aja, " + cName, "Jangan Suka Tag gua, " + cName, "Kamu siapa, " + cName + "?", "Ada Perlu apa, " + cName + "?","Tag doang tidak perlu., "]
                      ret_ = "[Auto Respond] " + random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -842,7 +842,7 @@ def bot(op):
                     if wait["lang"] == "JP":
                         kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Invite」\n❂➣「Status:Protection Invite Aktif」")
                     else:
-                        kr.sendText(msg.to,"Protection Invite already On")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Invite」\n❂➣「Status:Protection Invite Aktif」")
                 else:
                     wait["inviteprotect"] = True
                     if wait["lang"] == "JP":
@@ -852,9 +852,9 @@ def bot(op):
             elif msg.text.lower() == 'cancel on':
                 if wait["cancelprotect"] == True:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"¢αи¢єℓ ρяσтє¢тισи ѕєт тσ σи")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Cancel」\n❂➣「Status:Protection Cancel Aktif」")
                     else:
-                        kr.sendText(msg.to,"¢αи¢єℓ ρяσтє¢тισи αℓяєα∂у σи")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Cancel」\n❂➣「Status:Protection Cancel Aktif」")
                 else:
                     wait["cancelprotect"] = True
                     if wait["lang"] == "JP":
@@ -864,9 +864,9 @@ def bot(op):
             elif msg.text.lower() == 'autojoin on':
                 if wait["autoJoin"] == True:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"αυтσʝσιи ѕєт тσ σи")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Join」\n❂➣「Status:Auto Join Aktif」")
                     else:
-                        kr.sendText(msg.to,"αυтσʝσιи αℓяєα∂у σи")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Join」\n❂➣「Status:Auto Join Aktif」")
                 else:
                     wait["autoJoin"] = True
                     if wait["lang"] == "JP":
@@ -876,21 +876,21 @@ def bot(op):
             elif msg.text.lower() == 'autojoin off':
                 if wait["autoJoin"] == False:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"αυтσʝσιи ѕєт тσ σff")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Join」\n❂➣「Status:Auto Join Close」")
                     else:
-                        kr.sendText(msg.to,"αυтσʝσιи αℓяєα∂у σff")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Join」\n❂➣「Status:Auto Join Close」")
                 else:
                     wait["autoJoin"] = False
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"αυтσʝσιи ѕєт тσ σff")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Join」\n❂➣「Status:Auto Join Close」")
                     else:
-                        kr.sendText(msg.to,"αυтσʝσιи αℓяєα∂у σff")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Join」\n❂➣「Status:Auto Join Close」")
             elif msg.text.lower() == 'protect off':
                 if wait["protect"] == False:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"Protection already Off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Group」\n❂➣「Status:Protection Group Close」")
                     else:
-                        kr.sendText(msg.to,"Protection already Off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Group」\n❂➣「Status:Protection Group Close」")
                 else:
                     wait["protect"] = False
                     if wait["lang"] == "JP":
@@ -900,9 +900,9 @@ def bot(op):
             elif msg.text.lower() == 'qr off':
                 if wait["linkprotect"] == False:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"Protection Qr already off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Qr」\n❂➣「Status:Protection Qr Close」")
                     else:
-                        kr.sendText(msg.to,"Protection Qr already off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Qr」\n❂➣「Status:Protection Qr Close」")
                 else:
                     wait["linkprotect"] = False
                     if wait["lang"] == "JP":
@@ -912,9 +912,9 @@ def bot(op):
             elif msg.text.lower() == 'invit off':
                 if wait["inviteprotect"] == False:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"Protection Invite already Off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Invite」\n❂➣「Status:Protection Invite Close」")
                     else:
-                        kr.sendText(msg.to,"Protection Invite already Off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Protection Invite」\n❂➣「Status:Protection Invite Close」")
                 else:
                     wait["inviteprotect"] = False
                     if wait["lang"] == "JP":
@@ -1032,13 +1032,13 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': "u31ef22df7f538df1d74dc7f756ef1a32"}
                 kr.sendMessage(msg)
-                kr.sendText(msg.to,'❂➣ Creator yang manis kalem  􀜁􀄯􏿿')
+                kr.sendText(msg.to,'My Creator')
             elif msg.text.lower() == 'autoadd on':
                 if wait["autoAdd"] == True:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"Auto add set to on")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto add」\n❂➣「Status:Auto add Aktif」")
                     else:
-                        kr.sendText(msg.to,"Auto add already on")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto add」\n❂➣「Status:Auto add Aktif」")
                 else:
                     wait["autoAdd"] = True
                     if wait["lang"] == "JP":
@@ -1048,9 +1048,9 @@ def bot(op):
             elif msg.text.lower() == 'autoadd off':
                 if wait["autoAdd"] == False:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"Auto add set to off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto add」\n❂➣「Status:Auto add Close」")
                     else:
-                        kr.sendText(msg.to,"Auto add already off")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto add」\n❂➣「Status:Auto add Close」")
                 else:
                     wait["autoAdd"] = False
                     if wait["lang"] == "JP":
@@ -1398,83 +1398,83 @@ def bot(op):
                         
             elif msg.text in ["Simisimi on","Simisimi:on"]:
                 settings["simiSimi"][msg.to] = True
-                kr.sendText(msg.to,"Simi mode On")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Simi Simi」\n❂➣「Status:Simi Simi On」")
                 
             elif msg.text in ["Simisimi off","Simisimi:off"]:
                 settings["simiSimi"][msg.to] = False
-                kr.sendText(msg.to,"Simi mode Off")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Simi Simi」\n❂➣「Status:Simi Simi Off」")
                 
             elif msg.text in ["Autoread on","Read:on"]:
                 wait['alwayRead'] = True
-                kr.sendText(msg.to,"Auto read On")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Read」\n❂➣「Status:Auto Read On」")
                 
             elif msg.text in ["Autoread off","Read:off"]:
                 wait['alwayRead'] = False
-                kr.sendText(msg.to,"Auto read Off")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Read」\n❂➣「Status:Auto Read Off」")
                 
             elif msg.text in ["Respontag on","Autorespon:on","Respon on","Respon:on"]:
                 wait["detectMention"] = True
-                kr.sendText(msg.to,"Auto respon tag On")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Respon」\n❂➣「Status:Auto Respon On」")
                 
             elif msg.text in ["Respontag off","Autorespon:off","Respon off","Respon:off"]:
                 wait["detectMention"] = False
-                kr.sendText(msg.to,"Auto respon tag Off")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Auto Respon」\n❂➣「Status:Auto Respon Off」")
             
             elif msg.text in ["Kicktag on","Autokick:on","Responkick on","Responkick:on"]:
                 wait["kickMention"] = True
-                kr.sendText(msg.to,"Auto Kick tag ON")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Responkick」\n❂➣「Status:Auto Kick Tag On」")
                 
             elif msg.text in ["Kicktag off","Autokick:off","Responkick off","Responkick:off"]:
                 wait["kickMention"] = False
-                kr.sendText(msg.to,"Auto Kick tag OFF")
+                kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Responkick」\n❂➣「Status:Auto Kick Tag On」")
             elif "Time" in msg.text:
               if msg.toType == 2:
                   kr.sendText(msg.to,datetime.today().strftime('%H:%M:%S'))
 #==============================================================================#
-            elif msg.text in ["Sambut on","sambut on"]:
+            elif msg.text in ["Welcome on","welcome on"]:
                 if wait["Wc"] == True:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"noтιғ yg joιn on")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Walcome」\n❂➣「Status:Welcome On」")
                 else:
                     wait["Wc"] = True
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"already on")
-            elif msg.text in ["Sambut off","sambut off"]:
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Walcome」\n❂➣「Status:Welcome On」")
+            elif msg.text in ["Welcome off","welcome off"]:
                 if wait["Wc"] == False:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"noтιғ yg joιn oғғ")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Walcome」\n❂➣「Status:Welcome Off」")
                 else:
                     wait["Wc"] = False
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"already oғғ")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Walcome」\n❂➣「Status:Welcome Off」")
 #==============================================================================#
-            elif msg.text in ["Pergi on","pergi on"]:
+            elif msg.text in ["Keluar on","keluar on"]:
                 if wait["Lv"] == True:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"noтιғ yg leave on")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Keluar」\n❂➣「Status:Keluar On」")
                 else:
                     wait["Lv"] = True
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"already on")
-            elif msg.text in ["Pergi off","pergi off"]:
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Keluar」\n❂➣「Status:Keluar On」")
+            elif msg.text in ["Keluar off","keluar off"]:
                 if wait["Lv"] == False:
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"noтιғ yg leave oғғ")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Keluar」\n❂➣「Status:Keluar Off」")
                 else:
                     wait["Lv"] = False
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"already oғғ")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Keluar」\n❂➣「Status:Keluar Off」")
 #==============================================================================#
-            elif "Cleanse" in msg.text:
+            elif "Biohazard" in msg.text:
 				if msg.toType == 2:
 					if msg.toType == 2:
 						print "ok"
-						_name = msg.text.replace("Cleanse","")
+						_name = msg.text.replace("Biohazard","")
 						gs = kr.getGroup(msg.to)
 						gs = kr.getGroup(msg.to)
 						gs = kr.getGroup(msg.to)
-						kr.sendText(msg.to,"Just some casual cleansing ô")
-						kr.sendText(msg.to,"Group cleansed.")
+						kr.sendText(msg.to,"Salam Dari RESIDEN EVIL BOT")
+						kr.sendText(msg.to,"BIOHAZARD Already on")
 						targets = []
 						for g in gs.members:
 							if _name in g.displayName:
@@ -1490,8 +1490,8 @@ def bot(op):
 									kicker.kickoutFromGroup(msg.to,[target])
 									print (msg.to,[g.mid])
 								except:
-									kr.sendText(msg.to,"Group cleanse")
-									kr.sendText(msg.to,"Group cleanse")
+									kr.sendText(msg.to,"Group Have Been Clean")
+									kr.sendText(msg.to,"Group Have Been Clean")
             elif msg.text in ["Salam1"]:
                 kr.sendText(msg.to,"السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ")
                 kr.sendText(msg.to,"Assalamu'alaikum")
@@ -1582,30 +1582,30 @@ def bot(op):
                     else:
                         kr.sendText(msg.to,"Invitan tidak ada")
             
-            elif msg.text.lower() == 'link on':
+            elif msg.text.lower() == 'Buka':
                 if msg.toType == 2:
                     group = kr.getGroup(msg.to)
                     group.preventJoinByTicket = False
                     kr.updateGroup(group)
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"URL open")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Buka」\n❂➣「Status:Link Telah Terbuka」")
                     else:
-                        kr.sendText(msg.to,"URL open")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Buka」\n❂➣「Status:Link Telah Terbuka」")
                 else:
                     if wait["lang"] == "JP":
                         kr.sendText(msg.to,"It can not be used outside the group")
                     else:
                         kr.sendText(msg.to,"Can not be used for groups other than")
             
-            elif msg.text.lower() == 'link off':
+            elif msg.text.lower() == 'Curl':
                 if msg.toType == 2:
                     group = kr.getGroup(msg.to)
                     group.preventJoinByTicket = True
                     kr.updateGroup(group)
                     if wait["lang"] == "JP":
-                        kr.sendText(msg.to,"URL close")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Buka」\n❂➣「Status:Link Telah Tertutup」")
                     else:
-                        kr.sendText(msg.to,"URL close")
+                        kr.sendText(msg.to,"❂➣「Prosses」\n❂➣「Type:Buka」\n❂➣「Status:Link Telah Tertutup」")
                 else:
                     if wait["lang"] == "JP":
                         kr.sendText(msg.to,"It can not be used outside the group")
@@ -1708,7 +1708,7 @@ def bot(op):
                     except:
                         pass
 #==============================================================================#
-            elif "nah" == msg.text.lower():
+            elif "Tag" == msg.text.lower():
                  group = kr.getGroup(msg.to)
                  nama = [contact.mid for contact in group.members]
                  nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
@@ -1744,7 +1744,7 @@ def bot(op):
                  cnt.to = msg.to
                  kr.sendMessage(cnt)
 
-            elif "cctv on" == msg.text.lower():
+            elif "Cek on" == msg.text.lower():
                 if msg.to in wait2['readPoint']:
                         try:
                             del wait2['readPoint'][msg.to]
@@ -1776,7 +1776,7 @@ def bot(op):
                      print wait2
 
                     
-            elif "cctv off" == msg.text.lower():
+            elif "Cek off" == msg.text.lower():
                 if msg.to not in wait2['readPoint']:
                     kr.sendText(msg.to,"Setpoint already off")
                 else:
@@ -1790,7 +1790,7 @@ def bot(op):
 
 
                     
-            elif msg.text in ["toong","Toong"]:
+            elif msg.text in ["Read","read"]:
                  if msg.toType == 2:
                     print "\nRead aktif..."
                     if msg.to in wait2['readPoint']:
